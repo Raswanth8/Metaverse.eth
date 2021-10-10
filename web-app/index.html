@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Blockchain Based Evidence Verification</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins&display=swap" rel="stylesheet">
+
+<body>
+    <center>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12" style="height:25px;"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <nav class="navbar fixed-top navbar-dark bg-secondary ">
+            <a class="navbar-brand" href="#!"><text style="font-family: 'Orbitron', sans-serif; color: rgb(255, 251, 0);" >MetaVERse</text></a>
+          </nav>
+          <br><br><br>
+          <img src="https://i.ibb.co/899Xr2Q/Meta.png"  style="height: 300px; width: 600px;" alt="Responsive image">
+          <br>
+          <text style="font-family: 'Orbitron', sans-serif">#BUIDL with ETH </text>
+          <br><br>
+        <div class="form-group">
+          <label class="custom-file">
+            <input type="file" id="hashFile" class="custom-file-input">
+            <span class="custom-file-control" data-content="Choose file..." style="font-family: 'Poppins', sans-serif;"></span>
+          </label>
+        </div>
+        <div class="form-group">
+          <button type='button' id="sendHashButton" onclick="send()" class="btn btn-secondary"/>
+          <text style="font-family: 'Poppins', sans-serif;">Verify through Blockchain</text>
+          </button>
+          <button type='button' id= "findHashButton" onclick="find()" class="btn btn-warning"/>
+          <text style="font-family: 'Poppins', sans-serif;">Find on Blockchain</text>
+          </button>
+        </div>
+          <div id=responseText style="font-family: 'Poppins', sans-serif;"></div>
+        </div>
+      </div>
+    </div>
+</center>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script src="./sha256.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+<script src="./app.js"></script>
+<script src="./evidenceWebLib.js"></script>
+</body>
+</html>
